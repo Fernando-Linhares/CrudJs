@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Produtos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <br>
+    <br>  
+    <div class="container">
+        <div class="card">
+            <div class="card-title">
+                <h4 class="text-center">CRUD de Produtos</h4>
+                <button class="btn btn-outline-primary" id="criar" style="margin-left: 30px;">criar</button>
+            </div>
+            <div class="card-body">
+                <table class="table table-stripped">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>nome</th>
+                            <th>preço</th>
+                            <th>ações</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>test</td>
+                            <td>23</td>
+                            <td style="width: 20%;">
+                                <button class="btn btn-primary">editar</button>
+                                <button class="btn btn-danger">deletar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" role="dialog" id="modalProduto">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Produto</h5>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Nome</label>
+                            <input class="form-control" id="nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Preço</label>
+                            <input class="form-control" id="preco">
+                        </div>
+
+                        <input type="hidden" name="" id="produto_id">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="salvar">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
